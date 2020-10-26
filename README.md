@@ -23,7 +23,7 @@ sudo chmod +x ./start.sh
 **Windows**
 1. `strapi/.env.example` copy and rename to `strapi/.env`
 2. `mysql/.env.example` copy and rename to `mysql/.env`
-3. Update the passwords in the newly created`./mys1l/.env` and `./strapi/.env` files
+3. Update the passwords in the newly created`./mysql/.env` and `./strapi/.env` files
 
 4. Run `docker-compose restart` in a terminal
 5. Visit `locahost:1337/admin` in a browser to access strapi
