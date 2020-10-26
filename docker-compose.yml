@@ -4,9 +4,7 @@ services:
   backend:
     image: strapi
     restart: always
-    build:
-      context: ./strapi
-      dockerfile: Dockerfile.prod
+    build: ./strapi
     env_file:
       - ./strapi/.env
     links:
