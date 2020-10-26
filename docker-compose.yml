@@ -1,0 +1,26 @@
+version: "3.4"
+
+services:
+  backend:
+    image: strapi/strapi
+    env_file:
+      - ./strapi/.env
+    links:
+      - mysql:mysql
+    volumes:
+      - ./strapi:/srv/app
+    ports:
+      - "1337:1337"
+
+  mysql:
+    image: mysql:5.7
+    restart: always
+    env_file:
+      - ./mysql/.env
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-db:/var/lib/mysql
+
+volumes:
+  mysql-db:
