@@ -8,7 +8,8 @@
 
 ### 1. Start the app
 
-Navigate to the root folder and enter the following commands:
+**Linux**
+1. Navigate to the root folder and enter the following commands:
 
 ```
 # Grant the execute permission
@@ -17,13 +18,16 @@ sudo chmod +x ./start.sh
 # Execute the script
 ./start.sh
 ```
+2. Update the passwords in the newly created`./mysql/.env` and `./strapi/.env
 
-**If that does not work on windows please duplicate and rename the following files**
-
+**Windows**
 1. `strapi/.env.example` copy and rename to `strapi/.env`
 2. `mysql/.env.example` copy and rename to `mysql/.env`
+3. Update the passwords in the newly created`./myswl/.env` and `./strapi/.env
 
-3. Run `docker-compose restart` in a terminal
-4. Visit `locahost:1337/admin` in a browser to access strapi
+4. Run `docker-compose restart` in a terminal
+5. Visit `locahost:1337/admin` in a browser to access strapi
+
+
 
 **Finished**
