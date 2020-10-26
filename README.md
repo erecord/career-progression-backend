@@ -1,12 +1,12 @@
 # Strapi with MySQL in a docker-compose network
 
-## Installation Guide
+## Setup Guide
 
-### Prerequisite
+### 0. Prerequisite
 
 1. Download and install [Docker](https://docs.docker.com/get-docker/) onto your system.
 
-### Start the app
+### 1. Start the app
 
 Navigate to the root folder and enter the following commands:
 
