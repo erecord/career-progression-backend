@@ -6,7 +6,7 @@
 
 1. Download and install [Docker](https://docs.docker.com/get-docker/) onto your system.
 
-### Start Docker-Compose
+### Start the app
 
 Navigate to the root folder and enter the following commands:
 
@@ -17,3 +17,13 @@ sudo chmod +x ./start.sh
 # Execute the script
 ./start.sh
 ```
+
+**If that does not work on windows please duplicate and rename the following files**
+
+1. `strapi/.env.example` copy and rename to `strapi/.env`
+2. `mysql/.env.example` copy and rename to `mysql/.env`
+
+3. Run `docker-compose restart` in a terminal
+4. Visit `locahost:1337/admin` in a browser to access strapi
+
+**Finished**
