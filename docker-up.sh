@@ -10,4 +10,4 @@ then
   cp ./strapi/.env.example ./strapi/.env
 fi
 
-docker-compose up $1
+docker-compose up -d $1
