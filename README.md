@@ -9,7 +9,7 @@
 ### 1. Start the app
 
 **Linux**
-1. Navigate to the root folder and enter the following commands:
+1. Navigate to the root folder and run the following commands:
 
 ```
 # Grant the execute permission
@@ -25,7 +25,7 @@ sudo chmod +x ./start.sh
 2. `mysql/.env.example` copy and rename to `mysql/.env`
 3. Update the passwords in the newly created`./mysql/.env` and `./strapi/.env` files
 
-4. Run `docker-compose restart` in a terminal
+4. In a terminal, navigate to the root folder and run `docker-compose up`
 5. Visit `locahost:1337/admin` in a browser to access strapi
 
 **Finished**
